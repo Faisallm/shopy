@@ -1,0 +1,109 @@
+.navbar {
+    /* default flex direction is
+    horizontal */
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    padding: 16px;
+    /* x-offset, y-offset, blur radius, spread radius */
+    box-shadow: 0 1px 3px -2px black;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    /* similar to like having a margin-right
+    on the image logo */
+    gap: 10px;
+}
+
+.nav-logo p {
+    /* a shade of black */
+    color: #171717;
+    font-size: 38px;
+    /* bold */
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    /* so as to remove the bullet points */
+    list-style: none;
+    /* space the links */
+    gap: 50px;
+    /* a shade of gray */
+    color: #626262;
+    font-size: 20px;
+    /* semi-bold */
+    font-weight: 500;
+}
+
+.nav-menu li {
+    /* default flex-direction is horizontal */
+    display: flex;
+    /* are we placing items below the
+    links in the navigation */
+    flex-direction: column;
+    /* crossAxisAlignment */
+    align-items: center;
+    /* mainAxisAlignment */
+    justify-content: center;
+    /* space between link items */
+    gap: 3px;
+    cursor: pointer;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #FF4141;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    /* gives the login button a margin-right of 45px */
+    gap: 45px;
+}
+
+.nav-login-cart button {
+    /*  */
+    width: 157px;
+    height: 58px;
+    outline: none;
+    /* reducing the border and giving it
+    a gray color */
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+
+
+/* when we click on the button,
+what happens? it adds like a toggle
+effect */
+
+.nav-login-cart button:active {
+    background: #f3f3f3;
+}
+
+.nav-cart-count {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+}
