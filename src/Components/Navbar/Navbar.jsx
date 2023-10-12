@@ -18,16 +18,16 @@ const Navbar = () => {
       {/* nav-menu */}
       <ul className="nav-menu">
         <l onClick={() => setMenu("shop")}>
-          <Link to="/">Shop</Link> {menu == "shop" ? <hr /> : ""}
+          <Link style={{ textDecoration: 'none' }} to="/">Shop</Link> {menu == "shop" ? <hr /> : ""}
         </l>
         <li onClick={() => setMenu("mens")}>
-          <Link to="/mens">Men</Link> {menu == "mens" ? <hr /> : ""}
+          <Link style={{ textDecoration: 'none' }} to="/mens">Men</Link> {menu == "mens" ? <hr /> : ""}
         </li>
         <li onClick={() => setMenu("womens")}>
-          <Link to="/womens">Women</Link> {menu == "womens" ? <hr /> : ""}
+          <Link style={{ textDecoration: 'none' }} to="/womens">Women</Link> {menu == "womens" ? <hr /> : ""}
         </li>
         <li onClick={() => setMenu("kids")}>
-          <Link to="/kids">Kids</Link> {menu == "kids" ? <hr /> : ""}
+          <Link style={{ textDecoration:'none' }} to="/kids">Kids</Link> {menu == "kids" ? <hr /> : ""}
         </li>
       </ul>
 
